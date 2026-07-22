@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+#root {
+  --color-red: #BB000E;
+  --color-light-red: #E31C25;
+  --color-white: #FFFFFF;
+  --color-text-dark: #1C1C1C;
+  --color-placeholder-dark: rgba(255, 255, 255, 0.6);
+  --color-placeholder-light: rgba(44, 44, 44, 0.6);
+  --input-color: #2C2C2C;
+  --background-color: #222222;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+input, button, select {
+  font-family: inherit;
+}
+
+/*************************** Input ***************************/
+/* Styles généraux */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.input-container label {
+  font-size: 16px;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-red);
+  padding: 0.25rem 0.25rem;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 1px var(--color-red);
+}
+
+/* Styles personnalisés */
+.input-auth {
+  color: var(--color-text-dark);
+  /*background-color: var(--color-white);*/
+}
+
+.input-auth svg {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-auth .input {
+  color: var(--color-text-dark);
+  /*background-color: var(--color-white);*/
+}
+
+
+.input-dark {
+  color: var(--color-white);
+}
+
+.input-dark svg {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.input-dark .input {
+  color: var(--color-white);
+  background-color: var(--input-color);
+}
+
+/************************ SelectInput ************************/
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.select-container label {
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.select-input {
+  color: var(--color-white);
+  background-color: var(--input-color);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-light-red);
+  padding: 0.25rem 0.25rem;
+}
+
+.select-input:focus {
+  border-bottom: 2.5px solid var(--color-light-red);
+}
+
+/************************** Button ***************************/
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.button.selected, .button:hover {
+  border: 1px solid var(--color-light-red);
+  background-color: var(--color-light-red);
+}
+
+.button-genre {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--color-light-red);
+  background-color: var(--background-color);
+  /* Rayon arbitrairement grand pour faire bouton en forme de pilule "parfait" */
+  border-radius: 2000rem;
+  -webkit-border-radius: 2000rem;
+  -moz-border-radius: 2000rem;
+  -ms-border-radius: 2000rem;
+  -o-border-radius: 2000rem;
+}
+
+.button-auth,
+.button-sidebar {
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--color-red);
+  background-color: var(--color-red);
+}
+
+/************************* SearchBar *************************/
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid var(--input-color);
+  background-color: var(--input-color);
+  padding: 0.25rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.search-icon {
+  margin-inline: 0.25rem;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  flex: 1;
+  color: var(--color-white);
+}
+
+.search-input::placeholder {
+  color: var(--color-placeholder-dark);
+}
