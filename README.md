@@ -71,6 +71,7 @@ A pocket movie app built with React that allows you to keep track of your favori
 - Node.js
 - Docker & Docker Compose
 - npm
+
 ## Tech Stack
 
 - **React** 18.3.1
@@ -79,6 +80,7 @@ A pocket movie app built with React that allows you to keep track of your favori
 - **Font Awesome**
 - **Vite**
 - **JWT Authentication**
+
 ## Getting Started
 
 ### 1. Clone the backend repository
