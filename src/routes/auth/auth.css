@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+#root {
+  --color-red: #BB000E;
+  --color-light-red: #E31C25;
+  --color-white: #FFFFFF;
+  --color-text-dark: #1C1C1C;
+  --color-placeholder-dark: rgba(255, 255, 255, 0.6);
+  --color-placeholder-light: rgba(44, 44, 44, 0.6);
+  --input-color: #2C2C2C;
+  --background-color: #222222;
+
+  font-family: 'Roboto', sans-serif;
+}
+/************************* Authentication **************************/
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authentication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.switch button {
+  width: 100%;
+  padding-block: 0.75rem;
+}
+
+.auth-form {
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+/************************ Login / Register *************************/
+.login,
+.register {
+  padding: 2rem;
+}
+
+.login .input-container,
+.register .input-container {
+  margin-bottom: 2rem;
+}
+
+.auth-title {
+  color: var(--color-text-dark);
+  margin-bottom: 2rem;
+}
+
+.auth-submit {
+  justify-self: flex-end;
+}
