@@ -5,12 +5,12 @@ import Authentication from './routes/auth/Authentication';
 import Dashboard from './routes/dashboard/Dashboard';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [userUsername, setUserUsername] = useState('');
 
   useEffect(() => {
     const token = localStorage.getItem('accessToken');
-    axios.post('/api/auth/', {}, {
+    axios.post('http://localhost:8000/api/auth/', {}, {
       headers: {
         authorization: `Bearer ${token}`
       }
